@@ -1,4 +1,4 @@
-package simple;
+package tests.simple;
 
 
 import org.junit.jupiter.api.Disabled;

@@ -34,8 +34,8 @@ dependencies {
             "org.slf4j:slf4j-simple:1.7.32"
     )
 }
-
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -49,6 +49,32 @@ tasks.withType(Test) {
 task smoke_tests(type: Test) {
     useJUnitPlatform {
         includeTags("smoke")
+    }
+}
+
+task one_property_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("one_property")
+    }
+}
+
+task hello_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("hello")
+    }
+}
+
+task two_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("one_property")
+        includeTags("hello")
+    }
+}
+
+task tag_example_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("needed", "negative")
+        excludeTags("prod")
     }
 }
 

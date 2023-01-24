@@ -1,6 +1,8 @@
 
 
 
+https://api.telegram.org/bot5663270315:AAFdSa5_n9Ge8w_A44Zq76CA0trfg9miWeI/getUpdates
+
 
 
 curl -X POST \

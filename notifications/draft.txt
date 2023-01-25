@@ -3,6 +3,6 @@
 
 https://api.telegram.org/bot5663270315:AAFdSa5_n9Ge8w_A44Zq76CA0trfg9miWeI/getUpdates
 
+java "-DconfigFile=notifications/telegram.json" -jar notifications/allure-notifications-4.2.1.jar
 
-
-curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001747822201", "text": "This is a test from curl", "Mozer_qa": true}' https://api.telegram.org/bot5663270315:AAFdSa5_n9Ge8w_A44Zq76CA0trfg9miWeI/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001747822201", "text": "This is a test from Mozer_qa", "disable_notification": true}' https://api.telegram.org/bot5663270315:AAFdSa5_n9Ge8w_A44Zq76CA0trfg9miWeI/sendMessage
